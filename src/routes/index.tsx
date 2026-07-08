@@ -936,51 +936,80 @@ function Contact() {
             ))}
           </div>
 
-          <div className="mt-10 space-y-4">
-            <div className="flex items-start gap-3">
-              <div className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary/8 text-primary-deep">
-                <Phone className="h-5 w-5" />
-              </div>
-              <div>
-                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Phone</div>
-                <div className="mt-0.5 flex flex-col text-sm font-semibold text-foreground">
-                  <a href="tel:+918438525688" data-cursor="hover" className="hover:text-primary-deep">+91 84385 25688</a>
-                  <a href="tel:+919047055592" data-cursor="hover" className="hover:text-primary-deep">+91 90470 55592</a>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-start gap-3">
-  <div className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary/8 text-primary-deep">
-    <Mail className="h-5 w-5" />
-  </div>
-  <div>
-    <div className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-      Email
+<div className="mt-10 space-y-4">
+  {/* Phone */}
+  <div className="flex items-start gap-3">
+    <div className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary/8 text-primary-deep">
+      <Phone className="h-5 w-5" />
     </div>
-    <div className="mt-0.5 text-sm font-semibold text-foreground">
-      <a
-        href="mailto:navin@ran-ga.com"
-        data-cursor="hover"
-        className="hover:text-primary-deep"
-      >
-        navin@ran-ga.com
-      </a>
+
+    <div>
+      <div className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+        Phone
+      </div>
+
+      <div className="mt-0.5 flex flex-col text-sm font-semibold text-foreground">
+        <a
+          href="tel:+918438525688"
+          data-cursor="hover"
+          className="hover:text-primary-deep transition-colors"
+        >
+          +91 84385 25688
+        </a>
+
+        <a
+          href="tel:+919047055592"
+          data-cursor="hover"
+          className="hover:text-primary-deep transition-colors"
+        >
+          +91 90470 55592
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {/* Email */}
+  <div className="flex items-start gap-3">
+    <div className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary/8 text-primary-deep">
+      <Mail className="h-5 w-5" />
+    </div>
+
+    <div>
+      <div className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+        Email
+      </div>
+
+      <div className="mt-0.5 text-sm font-semibold text-foreground">
+        <a
+          href="mailto:navin@ran-ga.com"
+          data-cursor="hover"
+          className="hover:text-primary-deep transition-colors"
+        >
+          navin@ran-ga.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {/* Address */}
+  <div className="flex items-start gap-3">
+    <div className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary/8 text-primary-deep">
+      <MapPin className="h-5 w-5" />
+    </div>
+
+    <div>
+      <div className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+        Address
+      </div>
+
+      <div className="mt-0.5 max-w-xs text-sm font-semibold text-foreground leading-relaxed">
+        Veeramudi Karupparayan Kovil Thottam,
+        <br />
+        Annur
+      </div>
     </div>
   </div>
 </div>
-            <div className="flex items-start gap-3">
-              <div className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary/8 text-primary-deep">
-                <MapPin className="h-5 w-5" />
-              </div>
-              <div>
-                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">Address</div>
-                <div className="mt-0.5 max-w-xs text-sm font-semibold text-foreground leading-relaxed">
-                  Veeramudi karupparayan kovil thottam, Annur
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <form
           onSubmit={(e) => { e.preventDefault(); setSent(true); setTimeout(() => setSent(false), 3000); }}
