@@ -950,6 +950,25 @@ function Contact() {
               </div>
             </div>
             <div className="flex items-start gap-3">
+  <div className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary/8 text-primary-deep">
+    <Mail className="h-5 w-5" />
+  </div>
+  <div>
+    <div className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+      Email
+    </div>
+    <div className="mt-0.5 text-sm font-semibold text-foreground">
+      <a
+        href="mailto:navin@ran-ga.com"
+        data-cursor="hover"
+        className="hover:text-primary-deep"
+      >
+        navin@ran-ga.com
+      </a>
+    </div>
+  </div>
+</div>
+            <div className="flex items-start gap-3">
               <div className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary/8 text-primary-deep">
                 <MapPin className="h-5 w-5" />
               </div>
