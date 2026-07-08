@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight, ArrowUpRight, ShieldCheck, ScanFace, Activity, Bell, Cpu, Eye,
   Building2, Camera, Sparkles, Radio, MapPin, AlarmClock, BarChart3, Users,
-  Brain, Lock, Gauge, Workflow, ChevronRight, Code2, Infinity as InfinityIcon, Star,
+  Brain, Lock, Gauge, Workflow, ChevronRight, Code2, Infinity as InfinityIcon, Star, Mail,
   Phone,
 } from "lucide-react";
 import { CustomCursor } from "@/components/CustomCursor";
