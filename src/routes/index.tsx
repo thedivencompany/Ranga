@@ -455,7 +455,6 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 /* -------------------------------------------------------------------------- */
 function About() {
   const stats = [
-    { k: "10+", v: "Schools live", icon: Building2 },
     { k: "99%", v: "AI accuracy", icon: Cpu },
     { k: "50K+", v: "Events / day", icon: Activity },
     { k: "24/7", v: "Monitoring", icon: Eye },
